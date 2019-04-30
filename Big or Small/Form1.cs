@@ -29,8 +29,7 @@ namespace Guest_Big_Small
         private void Form1_Load(object sender, EventArgs e)
         {
             gameover = false;
-            EnableButton(false);
-            infolabel.Text = string.Empty;
+            EnableButton(false);           
             lbtoptext.Text = topText;
             pcWin = 0; playerWin=0;
             lbwinlose.Text = "";
@@ -88,14 +87,14 @@ namespace Guest_Big_Small
         {
             EnableButton(true);
             pictureBox1.Image = Image.FromFile(@d[52]);//蓋牌
-            pictureBox2.Image = Image.FromFile(@d[52]);//蓋牌
-            //應該改成玩家不蓋牌
-            
-         
+            pictureBox2.Image = Image.FromFile(@d[52]);//蓋牌                                                     
+
+
             //opencard(true);
 
             if (gameover)
             {
+                lbwinlose.Text = "";
                 lbtoptext.Text = topText;
                 btnDeal.Text = "發牌";
                 tbmoney.Text = "10";
@@ -104,11 +103,17 @@ namespace Guest_Big_Small
                 playerWin = 0;
                 leftWin.Text = "0";
                 rightWin.Text = "0";
+                shuffle_playcard();
+                EnableButton(false);
                 gameover = false;
             }
-
-        }      
-
+            else
+            {
+                lbwinlose.Text = "比大比小";
+                pictureBox2.Image = Image.FromFile(@d[cardNumList[1]]); //玩家亮牌
+            }
+        }     
+        
         //下注完成開牌 
         public void opencard(bool guessbigsmall)
         {           
@@ -118,7 +123,7 @@ namespace Guest_Big_Small
             int[] gameCardNO = new int[2];
 
             int[] point = new int[2];
-            int[] flower=new int[2];
+            int[] flower =new int[2];
            
 
             if (!Int32.TryParse(lbmoney.Text, out playermoney))
@@ -140,7 +145,7 @@ namespace Guest_Big_Small
                 if (cardNumList.Count>0)
                 {
                     pictureBox1.Image = Image.FromFile(@d[cardNumList[0]]);
-                    pictureBox2.Image = Image.FromFile(@d[cardNumList[1]]);
+                 
                     for (int i = 0; i < 2; i++)
                     {
                         gameCardNO[i] = cardNumList[0];
@@ -149,7 +154,7 @@ namespace Guest_Big_Small
                 }
                 
                 int cardRate = -1;            
-                infolabel.Text = "";
+               
 
                 for (int i = 0; i < 2; i++)
                 {

@@ -33,7 +33,6 @@
             this.btnDeal = new System.Windows.Forms.Button();
             this.btnbig = new System.Windows.Forms.Button();
             this.btnend = new System.Windows.Forms.Button();
-            this.infolabel = new System.Windows.Forms.Label();
             this.lbwinlose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbmoney = new System.Windows.Forms.Label();
@@ -106,16 +105,6 @@
             this.btnend.Text = "結束遊戲";
             this.btnend.UseVisualStyleBackColor = true;
             this.btnend.Click += new System.EventHandler(this.btnend_Click);
-            // 
-            // infolabel
-            // 
-            this.infolabel.AutoSize = true;
-            this.infolabel.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.infolabel.Location = new System.Drawing.Point(619, 314);
-            this.infolabel.Name = "infolabel";
-            this.infolabel.Size = new System.Drawing.Size(58, 30);
-            this.infolabel.TabIndex = 22;
-            this.infolabel.Text = "info";
             // 
             // lbwinlose
             // 
@@ -255,7 +244,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbwinlose);
-            this.Controls.Add(this.infolabel);
             this.Controls.Add(this.btnend);
             this.Controls.Add(this.btnbig);
             this.Controls.Add(this.DealTest);
@@ -281,7 +269,6 @@
         private System.Windows.Forms.Button btnDeal;
         private System.Windows.Forms.Button btnbig;
         private System.Windows.Forms.Button btnend;
-        private System.Windows.Forms.Label infolabel;
         private System.Windows.Forms.Label lbwinlose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbmoney;
