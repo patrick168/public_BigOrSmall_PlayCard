@@ -1,0 +1,10 @@
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\bin\Debug\Guest_Big_Small.exe.config
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\bin\Debug\Guest_Big_Small.exe
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\bin\Debug\Guest_Big_Small.pdb
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Big_Small.csprojAssemblyReference.cache
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Guest_Big_Small.Form1.resources
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Guest_Big_Small.Properties.Resources.resources
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Big_Small.csproj.GenerateResource.cache
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Big_Small.csproj.CoreCompileInputs.cache
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Guest_Big_Small.exe
+E:\Program design\NB program Tung Sample\BigOrSmall_PlayCard\Big or Small\obj\Debug\Guest_Big_Small.pdb
